@@ -403,6 +403,16 @@ express.static.mime.lookup("json");
 const mime = require("mime-types");
 mime.lookup("json");
 ```
+const mime = require('mime-types')
+mime.lookup('json')
+```
+
+<h3 id="res.sendFile.options">res.sendFile() and express.static() options</h3>
+
+The following options to the `res.sendFile()` and `express.static()` functions are no longer supported:
+
+* `hidden`: Use the `dotfiles` option instead.
+* `from`: Use the `root` option instead.
 
 <h3 id="express:router-debug-logs">express:router debug logs</h3>
 
